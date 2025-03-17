@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <!-- Google Fonts for a lovely and sweet feel -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS -->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="content">
+        <h1>Happy Birthday, Mini Mama! 🎉🎈💖</h1>
+        <div class="buttons">
+            <button onclick="window.location.href='wishes.html'">Message for You 💌</button>
+            <button onclick="window.location.href='blessings.html'">Blessings for You 🌸</button>
+            <button onclick="window.location.href='cake.html'">Birthday Cake Gift 🎂🎁</button>
+            <button onclick="window.location.href='teddy.html'">Teddy Bear Gift 🧸💖</button>
+            <button onclick="window.location.href='memories.html'">Memory Lane ✨</button>
+        </div>
+    </div>
+
+    <script>
+        function createFallingElement(type) {
+            const element = document.createElement('div');
+            element.classList.add('falling');
+            
+            element.innerHTML = type === 'balloon' ? '🎈' : type === 'petal' ? '🌸' : '💖';
+            
+            element.style.left = Math.random() * 100 + 'vw';
+            element.style.fontSize = (Math.random() * 30 + 30) + 'px';
+            
+            document.body.appendChild(element);
+
+            const fallDuration = Math.random() * 3 + 3;
+            element.style.animationDuration = `${fallDuration}s`;
+
+            element.addEventListener('animationend', () => {
+                element.remove();
+            });
+        }
+
+        setInterval(() => createFallingElement('balloon'), 500);
+        setInterval(() => createFallingElement('petal'), 500);
+        setInterval(() => createFallingElement('heart'), 500); // Add more falling hearts
+    </script>
+</body>
+</html>

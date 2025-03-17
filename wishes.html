@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Wishes ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom right, #ffebf2, #ff99cc); 
+            color: #4a4a4a;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive; 
+            color: #ff69b4; 
+            font-size: 4em;
+            margin-bottom: 30px;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 2s ease-out;
+        }
+
+        p {
+            font-size: 1.3em;
+            line-height: 1.6;
+            color: #4a4a4a;
+            margin-bottom: 15px;
+            font-weight: 300;
+        }
+
+        button {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        button:hover {
+            background-color: #ff3385;
+            transform: scale(1.1);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+            animation: bounce 0.5s ease-out;
+        }
+
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Birthday Wishes ❤️</h1>
+    <p>Wishing you a day filled with love, joy, and laughter!</p>
+    <p>May all your dreams come true!</p>
+    <p>Happy Birthday to the best sister in the world!</p>
+    <button onclick="window.location.href='index.html'">Back</button>
+
+</body>
+</html>

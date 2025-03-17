@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Cake</title>
+    <!-- Google Fonts for a more playful feel -->
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom right, #ffebf2, #ff99cc); /* Soft pink gradient */
+            color: #4a4a4a;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-family: 'Baloo Tamma 2', cursive; /* Playful font for header */
+            color: #ff69b4; /* Pink color for heading */
+            font-size: 4em;
+            margin-bottom: 30px;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 2s ease-out;
+        }
+
+        /* Cake container styles */
+        .cake-container {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .cake-container img {
+            width: 250px; /* Adjust the size of the image */
+            height: auto;
+            border-radius: 10px; /* Optional: adds a slight border-radius to the image */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Button Styles */
+        button {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            padding: 18px 36px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            font-weight: 600;
+        }
+
+        button:hover {
+            background-color: #ff3385;
+            transform: scale(1.1);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Keyframe Animation for Fade-In */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Floating Hearts */
+        .floating-heart {
+            position: absolute;
+            top: 0;
+            font-size: 2rem;
+            animation: float 6s ease-in-out infinite;
+            opacity: 0.8;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0);
+            }
+            50% {
+                transform: translateY(-80px) rotate(180deg);
+            }
+            100% {
+                transform: translateY(0) rotate(360deg);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 3em;
+            }
+            .cake-container img {
+                width: 200px;
+            }
+            button {
+                font-size: 1.1em;
+                padding: 14px 28px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            .cake-container img {
+                width: 180px;
+            }
+            button {
+                font-size: 1em;
+                padding: 12px 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Enjoy Your Cake! 🎂🍰</h1>
+    <div class="cake-container">
+        <img src="./assets/hbd.jpeg" alt="Birthday Cake">
+    </div>
+    <button onclick="window.location.href='index.html'">Back to Home 💕</button>
+
+    <!-- Floating Hearts -->
+    <div class="floating-heart" style="left: 10%;">💖</div>
+    <div class="floating-heart" style="left: 25%;">💖</div>
+    <div class="floating-heart" style="left: 40%;">💖</div>
+    <div class="floating-heart" style="left: 60%;">💖</div>
+    <div class="floating-heart" style="left: 80%;">💖</div>
+</body>
+</html>

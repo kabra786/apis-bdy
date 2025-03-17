@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memories with My Sister</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@400;600&display=swap" rel="stylesheet"> 
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom right, #ffccff, #ff99cc); /* Soft pink gradient */
+            color: #4a4a4a;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive; /* Elegant font for the heading */
+            color: #ff69b4; /* Pink color for heading */
+            font-size: 3em;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 2s ease-out;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.3em;
+            color: #4a4a4a;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+
+        button {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        button:hover {
+            background-color: #ff3385;
+            transform: scale(1.1);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Video styling */
+        video {
+            width: 80%;
+            max-width: 700px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            margin: 20px 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            p {
+                font-size: 1.2em;
+            }
+            button {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2em;
+            }
+            p {
+                font-size: 1em;
+            }
+            button {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Our Special Memories 💖</h1>
+    <p>Here's a video of our special moments together. Hope it brings a smile to your face!</p>
+
+    <!-- Make sure the video file is placed in the correct path -->
+    <video controls>
+        <source src="./assets/Puffer.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <button onclick="window.location.href='index.html'">Back to Home</button>
+</body>
+</html>

@@ -1,0 +1,103 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #ffe3e3, #ffb3c6); /* Soft pastel pink gradient */
+    color: #4a4a4a;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+}
+
+h1 {
+    color: #ff69b4; /* Soft pink for heading */
+    font-family: 'Dancing Script', cursive; /* Cursive, lovely font */
+    font-size: 4em;
+    margin-bottom: 40px;
+    font-weight: 700;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Styles */
+button {
+    background-color: #ffffff;
+    color: #ff69b4;
+    border: 2px solid #ff69b4;
+    border-radius: 30px;
+    padding: 16px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 6px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #ff69b4;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Flexbox for center alignment */
+.content {
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Animation for Falling Elements */
+@keyframes fall {
+    0% { 
+        transform: translateY(-100vh) rotate(0deg); 
+        opacity: 1; 
+    }
+    100% { 
+        transform: translateY(100vh) rotate(360deg); 
+        opacity: 0; 
+    }
+}
+
+.falling {
+    position: absolute;
+    opacity: 0.8;
+    pointer-events: none;
+    font-size: 30px;
+    animation: fall linear infinite;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    button {
+        font-size: 1em;
+        padding: 12px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+    button {
+        font-size: 0.9em;
+        padding: 10px 20px;
+    }
+}
